@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ffd1e2;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 3px solid #66263f;
+  max-width: 50%;
+  margin: auto;
+}
+.entry {
+  border: 2px solid #66263f;
+  border-radius: 1rem;
+  background-color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: #66263f;
+  color: #ffd1e2;
+  border: 1px solid #66263f;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+h1 {
+  color: #66263f;
+}
+
+.verdict {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
