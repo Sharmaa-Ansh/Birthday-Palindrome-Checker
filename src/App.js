@@ -6,17 +6,13 @@ export default function App() {
 
   const [date, setDate] = useState();
 
-  function dateHandler(event) {
-    setDate(event.target.value);
-  }
-
   function clickHandler() {
     if (date === undefined) {
       setVerdict("Enter a Date");
     } else {
       var dateArray2;
       var dateArray = date.split("-");
-      dateArray2 = dateArray[0] + dateArray[1] + dateArray[2];
+      dateArray2 = dateArray[2] + dateArray[1] + dateArray[0];
       console.log(dateArray2);
       var arlng = dateArray2.length;
       for (var i = 0; i < arlng / 2; i++) {
@@ -32,7 +28,13 @@ export default function App() {
   return (
     <div className="App">
       <h1>Check out if your Birthday is a palindrome</h1>
-      <input className="entry" type="date" onChange={dateHandler} />
+      <input
+        className="entry"
+        type="date"
+        onChange={(e) => {
+          setDate(e.target.value, 10);
+        }}
+      />
       <div>
         <button onClick={clickHandler}>CHECK</button>
       </div>
